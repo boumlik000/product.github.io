@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: eng-font;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+body{
+    font-family: eng-font,sans-serif;
+}
+header video{
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+header .overlay{
+    background-color: rgba(255,255,255,.7);
+}
+header .brand{
+    padding-top: 40px;
+}
+header .header-text{
+    padding-top: 190px;
+}
+header .header-text h1{
+    font-size: 36px;
+    margin-bottom: 40px;
+    line-height: 46px;
+    color: #555555;
+}
+header .header-text p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #5d5d5d;
+}
+header .header-button a.btn{
+    margin-left: 15px;
+}
+header .product{
+    position: relative;
+    margin-bottom: 30px;
+}
+header .product .product-label img{
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+header .product .product-label p{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    color: #fff;
+    font-size: 24px;
+}
+header .product .product-label span{
+    display: block;
+}
+/*header ends*/
+section.features{
+    padding: 70px 0;
+    background-color: #fff !important;
+}
+section.features .features-title h2{
+    font-size: 36px;
+    color: #555555;
+    line-height: 32px;
+    padding-bottom: 45px;
+    position: relative;
+}
+section.features .features-title h2::after{
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.features .media-feature  .d-flex{
+    padding: 70px 0;
+    border-bottom: 3px solid #eee;
+}
+section.features .media-feature .d-flex:nth-child(even){
+    direction: rtl;
+}
+section.features .media-feature .d-flex img{
+    margin: 0 80px;
+}
+section.features .media-feature .d-flex h4{
+    font-size: 36px;
+    font-weight: bold;
+    color: #6a3093;
+    padding: 0 25px;
+    margin-bottom: 50px;
+    border-left: 2px solid #6a3093;
+}
+section.features .media-feature .d-flex:nth-child(even) h4{
+    border-left: none;
+    border-right: 2px solid #6a3093;
+}
+section.features .media-feature .d-flex p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+}
+/*features end*/
+/*prices*/
+section.prices{
+    padding: 50px 0 60px;
+    background-color: #f7f7f7 !important;
+}
+section.prices .prices-text h2{
+    font-size: 30px;
+    color: #555;
+}
+section.prices .plan-card{
+    background-color: #fff;
+    border: 2px solid #ede;
+    padding: 15px 0;
+    margin-top: 100px;
+    color: #acacac;
+}
+section.prices .plan-card .title{
+    color: #995ac5;
+    font-weight: 800;
+    font-size: 2rem;
+}
+section.prices .plan-card h5{
+    font-size: 48px;
+    margin: 30px auto;
+}
+section.prices .plan-card h5 span{
+    font-size: 15px;
+    vertical-align: bottom;
+}
+section.prices .plan-card ul li{
+    font-size: 15px;
+    margin-bottom: 30px;
+    list-style: none;
+    
+}
+section.prices .plan-card a i{
+    margin-right: 1rem;
+}
+section.prices .plan-card:hover{
+    padding: 3rem;
+    transition: .5s all ease-in-out;
+}
+/*prices end*/
+/*faq start*/
+section.faq {
+    padding: 55px 0;
+    background-color: #fff;
+}
+section.faq .faq-title h2{
+    font-size: 30px;
+    color: #555;
+    margin-bottom: 55px;
+}
+section.faq .accordion .accordion-item{
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+}
+section.faq .accordion .accordion-item button{
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+section.faq .accordion .accordion-item .accordion-body{
+    font-size: 15px;
+    color: #c9c9c9;
+    line-height: 24px;
+}
+section.faq .accordion .accordion-item .accordion-button:not(.collapsed){
+    background-color: #fff;
+}
+section.faq .accordion .accordion-item .accordion-button:hover{
+    background-color: #995ac5;
+    color: #fff;
+    font-weight: bold;
+}
+
+section.faq .accordion .accordion-item .accordion-button:focus{
+    border: 0;
+    box-shadow: 0 0 0;
+}
+/*section video*/
+section.video{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+section.video video{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+section.video .overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100%;
+    position: absolute;
+    inset: 0;
+    
+}
+section.video .overlay button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    transform: translate(-50%,-50%);
+}
+section.video .overlay button i{
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto 45px;
+}
+/*contact*/
+section.contact{
+    background-color: rgb(32, 32, 32);
+    padding: 55px 0;
+    
+}
+section.contact .contact-title{
+    color: #f5f5f5 !important;
+    font-size: 40px;
+}
+section.contact form input,
+section.contact form textarea{
+    background-color: #5d5d5d;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+section.contact form input::placeholder,
+section.contact form textarea::placeholder{
+    font-size: 1.2rem;
+    color: #b9b9b9;
+}
+
+section.contact form button{
+    margin-bottom: 20px;
+    background-color: #995ac5;
+    border: none;
+}
+section.contact form button i{
+    margin-left: 5px;
+}
+section.contact form button:hover,
+section.contact form button:focus{
+    background-color: #6a3093;
+}
+section.contact form .invalid-feedback{
+    margin-top: -12px;
+    margin-bottom: 15px;
+}
+section.contact h4{
+    color: #b9b9b9;
+}
+section.contact p{
+    color: #868686;
+}
+/*footer*/
+footer{
+    background-color: #555;
+    padding: 10px 0;
+}
+footer span{
+    color: #c9c9c9;
+    font-size: 1.5rem;
+}
+
+footer .list-inline-item a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: #1d1d1d;
+    background-color: #758594;
+    text-align: center;
+    border-radius: 50%;
+
+}
+footer .list-inline-item a:hover{
+    background-color: #995ac5;
+    color: #fff;
+    transition: .3s all ease-in-out;
+}
